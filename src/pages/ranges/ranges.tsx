@@ -6,11 +6,25 @@ import { colorToClassName, dataSample, Item, Range } from './utils';
 const items = untypedItems as Item[];
 const ranges = untypedRanges as Range[];
 
-const transform = (items: Item[]) => {
-  // TODO implement
+const transform = (items: Item[]) =>
+  items.reduce<Range[]>((result, { date, color }) => {
+    if (result[result.length - 1]?.color !== color) {
+      result.push({
+        start: date,
+        end: date,
+        color: color,
+      });
 
-  return ranges;
-};
+      return result;
+    }
+
+    result[result.length - 1] = {
+      ...result[result.length - 1],
+      end: date,
+    };
+
+    return result;
+  }, []);
 
 const RangesView = ({ ranges }: { ranges: Range[] }) => (
   <ul className="space-y-4">
