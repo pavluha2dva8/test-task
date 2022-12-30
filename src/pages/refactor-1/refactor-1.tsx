@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useState } from 'react';
-import { CenteredLayout } from '~/components';
+import { CenteredLayout } from '~/components/layouts';
 
 // TODO is there a way to not write this twice? =\
 type ButtonType = 'fast' | 'quality' | 'cheap';

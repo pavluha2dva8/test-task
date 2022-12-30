@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CenteredLayout } from '~/components';
+import { CenteredLayout } from '~/components/layouts';
 
 // TODO how can we optimize, prevent re-rendering ExpensiveComponent
 // by changing component structure ?

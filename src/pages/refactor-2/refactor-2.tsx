@@ -1,4 +1,4 @@
-import { CenteredLayout } from '~/components';
+import { CenteredLayout } from '~/components/layouts';
 
 // TODO refactor
 
