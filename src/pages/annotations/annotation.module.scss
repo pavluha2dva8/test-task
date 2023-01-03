@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+}
+
+.upload {
+  display: flex;
+  justify-content: space-between;
+}
+
+.uploadText{
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.uploadButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #BEBEBE;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1E1E1E;
+  cursor: pointer;
+}
+
+.defaultInput {
+  display: none;
+}
+
+.imgContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+  background-color: #2A2A2A;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.instruction {
+  display: flex;
+  gap: 8px;
+}
+
+.instructionText {
+  font-size: 14px;
+  color: #909090;
+}
+
+.markerWrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  transform: translate(-50%, -16px);
+  pointer-events: none;
+}
+
+
+.markerPoint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #EF7058;
+}
+
+.speechBubble {
+  width: 364px;
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.commentInput {
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid rgba(147, 152, 162, .5);
+}
+
+.inputField {
+  width: 100%;
+  height: 26px;
+  outline: none;
+  font-size: 14px;
+  color: #4A4A4A;
+  pointer-events: all;
+}
+
+.inputButton {
+  pointer-events: all;
+}
+
+.annotation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.comment {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
+.commentAuthor {
+  font-weight: 700;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.commentText {
+  word-break: break-all;
+  white-space: normal;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2A2A2A;
+  opacity: .9;
+}
