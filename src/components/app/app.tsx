@@ -1,7 +1,7 @@
 import { Outlet, ReactLocation, Route, Router } from '@tanstack/react-location';
-import { CenteredLayout } from '~/components';
-import { Optimize1, Optimize2, Ranges, Refactor1, Refactor2 } from '~/pages';
-import { Header } from './header';
+import { CenteredLayout } from '~/components/layouts';
+import { Optimize1, Optimize2, Ranges, Refactor1, Refactor2, Annotations } from '~/pages';
+import { Header } from '../header';
 
 const Welcome = () => (
   <CenteredLayout className="gap-4">
@@ -36,6 +36,10 @@ const routes: Route[] = [
   {
     path: 'ranges',
     element: <Ranges />,
+  },
+  {
+    path: 'annotations',
+    element: <Annotations />,
   },
 ];
 
